@@ -86,11 +86,14 @@ var startGame = function () {
       enemyHealth = 50;
 
       fight(pickedEnemyName);
+<<<<<<< HEAD
 
       // if player is still alive and we're not at the last enemy in the array
       if (playerHealth > 0 && i < enemyNames.length - 1) {
         shop();
       }
+=======
+>>>>>>> main
     }
     else {
       window.alert('You have lost your robot in battle! Game Over!');
@@ -119,11 +122,14 @@ var startGame = function () {
   // after the loop ends, player is either out of health or enemies to fight, so run the endGame function
   endGame();
 };
+<<<<<<< HEAD
 
 // begin shop function
 var shop = function () {
   console.log("entered the shop");
 };
+=======
+>>>>>>> main
 // start the game when the page loads
 startGame();
 // function to end the entire game
