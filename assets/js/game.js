@@ -133,6 +133,21 @@ var endGame = function() {
   }
 };
 
+//function to set name
+var getPlayerName = function() {
+  var name = "";
+
+// *************************
+// ADD LOOP HERE WITH PROMPT
+while (name ==="" || name === null) {
+  name = prompt("What is your robot's name?");
+}
+// *************************
+
+console.log("Your robot's name is " + name);
+return name;
+};
+
 // go to shop between battles function
 var shop = function() {
   // ask player what they'd like to do
@@ -171,7 +186,7 @@ var shop = function() {
 
 // player information
 var playerInfo = {
-  name: window.prompt("What is your robot's name?"),
+  name: getPlayerName(),
   health: 100,
   attack: 10,
   money: 10,
